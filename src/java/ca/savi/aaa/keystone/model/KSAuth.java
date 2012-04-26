@@ -1,5 +1,5 @@
 // Copyright (C) 2012, The SAVI Project.
-package ca.savi.authentication.keystone.model;
+package ca.savi.aaa.keystone.model;
 
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -8,22 +8,22 @@ import javax.xml.bind.annotation.XmlRootElement;
  * @author Mohammad Sadegh Faraji <ms.faraji@utoronto.ca> Version 0.1
  */
 @XmlRootElement(name = "auth")
-class Auth {
-  protected PasswordCredential passwordCredentials;
+class KSAuth {
+  protected KSPasswordCredential passwordCredentials;
 
-  public Auth(PasswordCredential passwordCredentials) {
+  public KSAuth(KSPasswordCredential passwordCredentials) {
     this.passwordCredentials = passwordCredentials;
   }
 
-  public Auth() {
+  public KSAuth() {
   }
 
-  public void setPasswordCredentials(PasswordCredential passwordCredentials) {
+  public void setPasswordCredentials(KSPasswordCredential passwordCredentials) {
     this.passwordCredentials = passwordCredentials;
   }
 
   @XmlElement(name = "passwordCredentials")
-  public PasswordCredential getPasswordCredentials() {
+  public KSPasswordCredential getPasswordCredentials() {
     return passwordCredentials;
   }
 

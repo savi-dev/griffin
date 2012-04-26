@@ -1,5 +1,5 @@
 // Copyright (C) 2012, The SAVI Project.
-package ca.savi.authentication.keystone.model;
+package ca.savi.aaa.keystone.model;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -7,7 +7,7 @@ import javax.xml.bind.annotation.XmlRootElement;
  * @author Mohammad Sadegh Faraji <ms.faraji@utoronto.ca> Version 0.1
  */
 @XmlRootElement
-class EndPoint {
+class KSEndPoint {
   protected String adminURL;
   protected String region;
   protected String internalURL;

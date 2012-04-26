@@ -1,5 +1,5 @@
 // Copyright (C) 2012, The SAVI Project.
-package ca.savi.authentication.keystone.model;
+package ca.savi.aaa.keystone.model;
 
 import java.util.List;
 import javax.xml.bind.annotation.XmlRootElement;
@@ -8,12 +8,12 @@ import javax.xml.bind.annotation.XmlRootElement;
  * @author Mohammad Sadegh Faraji <ms.faraji@utoronto.ca> Version 0.1
  */
 @XmlRootElement
-class ServiceCatalog {
-  protected List<EndPoint> endpoints;
+class KSServiceCatalog {
+  protected List<KSEndPoint> endpoints;
   protected String type;
   protected String name;
 
-  public List<EndPoint> getEndpoints() {
+  public List<KSEndPoint> getEndpoints() {
     return endpoints;
   }
 
@@ -25,16 +25,16 @@ class ServiceCatalog {
     return type;
   }
 
-  public ServiceCatalog() {
+  public KSServiceCatalog() {
   }
 
-  public ServiceCatalog(List<EndPoint> endpoints, String type, String name) {
+  public KSServiceCatalog(List<KSEndPoint> endpoints, String type, String name) {
     this.endpoints = endpoints;
     this.type = type;
     this.name = name;
   }
 
-  public void setEndpoints(List<EndPoint> endpoints) {
+  public void setEndpoints(List<KSEndPoint> endpoints) {
     this.endpoints = endpoints;
   }
 

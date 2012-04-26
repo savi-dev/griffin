@@ -1,5 +1,5 @@
 // Copyright (C) 2012, The SAVI Project.
-package ca.savi.authentication.keystone.model;
+package ca.savi.aaa.keystone.model;
 
 import javax.xml.bind.annotation.XmlRootElement;
 
@@ -7,16 +7,16 @@ import javax.xml.bind.annotation.XmlRootElement;
  * @author Mohammad Sadegh Faraji <ms.faraji@utoronto.ca> Version 0.1
  */
 @XmlRootElement
-class Role {
+class KSRole {
   protected int tenantId;
 
-  public Role(int tenantId, int id, String name) {
+  public KSRole(int tenantId, int id, String name) {
     this.tenantId = tenantId;
     this.id = id;
     this.name = name;
   }
 
-  public Role() {
+  public KSRole() {
   }
 
   public void setId(int id) {
