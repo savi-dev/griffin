@@ -5,15 +5,34 @@ import java.util.List;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
- * @author Mohammad Sadegh Faraji <ms.faraji@utoronto.ca> Version 0.1
+ * @author Mohammad Faraji <ms.faraji@mail.utoronto.ca>
+ * @Version 0.1
  */
-@XmlRootElement
+@XmlRootElement(name = "user")
 public class KSUser {
-  protected int id;
+  protected String id;
   protected List<KSRole> roles;
   protected String name;
+  protected String username;
+  protected List<KSRoleLink> roles_links;
 
-  public void setId(int id) {
+  public List<KSRoleLink> getRoles_links() {
+    return roles_links;
+  }
+
+  public void setRoles_links(List<KSRoleLink> roles_links) {
+    this.roles_links = roles_links;
+  }
+
+  public String getUsername() {
+    return username;
+  }
+
+  public void setUsername(String username) {
+    this.username = username;
+  }
+
+  public void setId(String id) {
     this.id = id;
   }
 
@@ -25,7 +44,7 @@ public class KSUser {
     this.roles = roles;
   }
 
-  public int getId() {
+  public String getId() {
     return id;
   }
 

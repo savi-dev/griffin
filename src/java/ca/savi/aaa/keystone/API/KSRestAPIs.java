@@ -3,6 +3,7 @@ package ca.savi.aaa.keystone.API;
 
 import javax.ws.rs.Consumes;
 import javax.ws.rs.GET;
+import javax.ws.rs.HeaderParam;
 import javax.ws.rs.POST;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
@@ -13,23 +14,29 @@ import ca.savi.aaa.keystone.model.KSUserAuthResp;
 import ca.savi.aaa.keystone.model.KSUserCred;
 
 /**
- * @author Mohammad Sadegh Faraji <ms.faraji@utoronto.ca>
+ * @author Mohammad Faraji <ms.faraji@mail.utoronto.ca>
  * @version 0.2
  */
-@Path("/tokens")
+
 public interface KSRestAPIs {
   @POST
+  @Path("/tokens")
   @Produces("application/json")
   @Consumes("application/json")
   public ClientResponse<KSUserAuthResp> authCredential(KSUserCred cred);
 
   @GET
-  @Path("/{id}")
+  @Path("/tokens/{id}")
   @Produces("application/json")
-  public ClientResponse<KSUserAuthResp> authToken(@PathParam("id") String token); 
+  @Consumes("application/json")
+  public ClientResponse<KSUserAuthResp> authToken(
+      @PathParam("id") String token,
+      @HeaderParam("X-Auth-Token") String authToken);
 
   @GET
-  @Path("/{id}")
+  @Path("users/{id}")
   @Produces("application/json")
-  public ClientResponse<KSUser> getUserInfo(@PathParam("id") String user_id);
+  @Consumes("application/json")
+  public ClientResponse<KSUser> getUserInfo(@PathParam("id") String user_id,
+      @HeaderParam("X-Auth-Token") String authToken);
 }

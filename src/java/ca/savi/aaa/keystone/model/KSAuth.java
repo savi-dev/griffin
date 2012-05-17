@@ -5,7 +5,8 @@ import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
- * @author Mohammad Sadegh Faraji <ms.faraji@utoronto.ca> Version 0.1
+ * @author Mohammad Faraji <ms.faraji@mail.utoronto.ca>
+ * @Version 0.1
  */
 @XmlRootElement(name = "auth")
 class KSAuth {

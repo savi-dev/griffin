@@ -5,9 +5,10 @@ import java.util.List;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
- * @author Mohammad Sadegh Faraji <ms.faraji@utoronto.ca> Version 0.1
+ * @author Mohammad Faraji <ms.faraji@mail.utoronto.ca>
+ * @Version 0.1
  */
-@XmlRootElement
+@XmlRootElement(name = "serviceCatalog")
 class KSServiceCatalog {
   protected List<KSEndPoint> endpoints;
   protected String type;
@@ -28,7 +29,8 @@ class KSServiceCatalog {
   public KSServiceCatalog() {
   }
 
-  public KSServiceCatalog(List<KSEndPoint> endpoints, String type, String name) {
+  public KSServiceCatalog(List<KSEndPoint> endpoints,
+      String type, String name) {
     this.endpoints = endpoints;
     this.type = type;
     this.name = name;

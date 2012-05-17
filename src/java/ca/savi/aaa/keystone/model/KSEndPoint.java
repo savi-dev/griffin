@@ -4,7 +4,8 @@ package ca.savi.aaa.keystone.model;
 import javax.xml.bind.annotation.XmlRootElement;
 
 /**
- * @author Mohammad Sadegh Faraji <ms.faraji@utoronto.ca> Version 0.1
+ * @author Mohammad Faraji <ms.faraji@mail.utoronto.ca>
+ * @Version 0.1
  */
 @XmlRootElement
 class KSEndPoint {
