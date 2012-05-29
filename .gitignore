@@ -1,0 +1,11 @@
+*.class
+.project
+.classpath
+# Package Files #
+*.war
+*.ear
+/nbproject/private/
+/build/
+/dist/
+dist
+build
