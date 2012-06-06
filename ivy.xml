@@ -15,16 +15,8 @@
     </info>
 <dependencies>
     <dependency org="junit" name="junit" rev="4.10" />
-    <dependency org="javax.xml.bind" name="jaxb-api" rev="2.2.3" />
-    <dependency org="org.jboss.resteasy"
-     name="resteasy-jaxrs" rev="2.3.2.Final" />
-    <dependency org="org.codehaus.jackson"
-     name="jackson-jaxrs" rev="1.8.5"/>
-    <dependency org="org.codehaus.jackson"
-     name="jackson-mapper-asl" rev="1.8.5"/>
-    <dependency org="org.codehaus.jackson"
-     name="jackson-xc" rev="1.8.5" />
-    <dependency org="org.jboss.resteasy"
-     name="resteasy-jackson-provider" rev="2.3.2.Final"/>
+    <!--<dependency org="javax.xml.bind" name="jaxb-api" rev="2.2.5" />-->
+  <dependency org="com.sun.jersey" name="jersey-client" rev="1.12"/>
+  <dependency org="com.sun.jersey" name="jersey-core" rev="1.12"/>
 </dependencies>
 </ivy-module>

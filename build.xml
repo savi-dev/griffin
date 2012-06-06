@@ -30,7 +30,8 @@
     <property name="SRC_TEST_DIR" value="${PROJECT_HOME}/test/java/" />
     <!-- CLASSPATH -->
     <path id="classpath.lib">
-        <fileset dir="${LIB_DIR}" includes="*.jar" />
+            <fileset dir="${LIB_DIR}" includes="*.jar" />
+            <fileset dir="${PROJECT_HOME}/libs/" includes="*.jar" />
     </path>
     <path id="classpath.all">
         <path refid="classpath.lib" />

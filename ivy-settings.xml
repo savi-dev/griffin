@@ -36,6 +36,8 @@
         root="http://download.java.net/maven/2/" />
       <ibiblio name="java.net" m2compatible="true"
         root="http://repository.codehaus.org/" />
+     <ibiblio name="Eclipse" m2compatible="true"
+     root="http://download.eclipse.org/rt/eclipselink/maven.repo"/>
     </chain>
 
   </resolvers>
