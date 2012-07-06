@@ -25,7 +25,6 @@
     <property name="GEN_DIR" value="${PROJECT_HOME}/build/gen-src/" />
     <property name="GEN_SRC_DIR" value="${PROJECT_HOME}/${GEN_DIR}/java/" />
     <property name="LIB_DIR" value="${PROJECT_HOME}/build/lib/" />
-    <property name="RESOURCES_DIR" value="resources/" />
     <property name="SRC_DIR" value="${PROJECT_HOME}/src/" />
     <property name="SRC_TEST_DIR" value="${PROJECT_HOME}/test/java/" />
     <!-- CLASSPATH -->
@@ -59,11 +58,6 @@
         <javac srcdir="${SRC_DIR}:${GEN_SRC_DIR}" includeantruntime="false" destdir="${CLASSES_DIR}" debug="${DEBUG}">
             <classpath refid="classpath.lib" />
         </javac>
-        <copy todir="${CLASSES_DIR}">
-            <fileset dir="${RESOURCES_DIR}">
-                <include name="**/*" />
-            </fileset>
-        </copy>
     </target>
 
     <target name="build-test" depends="build">
