@@ -1,5 +1,6 @@
 package ca.savi.authentication.keystone.AllTests;
 
+<<<<<<< HEAD
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 import javax.xml.bind.JAXBContext;
@@ -10,6 +11,15 @@ import org.junit.Test;
 import ca.savi.aaa.keystone.API.KSDriver;
 import ca.savi.aaa.keystone.model.KSUserAuthResp;
 import ca.savi.aaa.keystone.model.KSUserCred;
+=======
+import static org.junit.Assert.*;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import org.junit.BeforeClass;
+import org.junit.Test;
+import ca.savi.aaa.keystone.API.KSServiceAPI;
+import ca.savi.aaa.keystone.model.KSUserAuthResp;
+>>>>>>> 2af70600eb7843d1f87e5c3a4912942c8de8610f
 
 /**
  * @author Mohammad Faraji <ms.faraji@mail.utoronto.ca>

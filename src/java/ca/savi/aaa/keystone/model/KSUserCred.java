@@ -11,7 +11,6 @@ import javax.xml.bind.annotation.XmlRootElement;
 public class KSUserCred {
   protected KSAuth auth;
 
-
   public KSUserCred(String userName, String password) {
     auth = new KSAuth(new KSPasswordCredential(userName, password));
   }

@@ -15,7 +15,6 @@
     </info>
 <dependencies>
     <dependency org="junit" name="junit" rev="4.10" />
-    <!--<dependency org="javax.xml.bind" name="jaxb-api" rev="2.2.5" />-->
   <dependency org="com.sun.jersey" name="jersey-client" rev="1.12"/>
   <dependency org="com.sun.jersey" name="jersey-core" rev="1.12"/>
 </dependencies>
